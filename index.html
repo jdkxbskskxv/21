@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dominos pizza.ua</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="hero">
+    <h1>dominos pizza</h1>
+    <button class="btn" data-modal-open>Замовити піцу</button>
+  </section>
+
+  <div class="modal-backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="modal-close" data-modal-close>&times;</button>
+      <h2>Форма замовлення</h2>
+      <form class="modal-form">
+        <label>
+          імя:
+          <input type="text" placeholder="імя" required>
+        </label>
+        <label>
+          телефон:
+          <input type="tel" placeholder="+380XXXXXXXXX" required>
+        </label>
+           <label>
+          кількість піци:
+          <input type="tel" placeholder="0" required>
+        </label>
+        <div class="size-selector">
+        <p>Оберіть розмір:</p>
+        <label>
+        <input type="radio" name="size" value="S" required />
+        S
+        </label>
+        <label>
+        <input type="radio" name="size" value="M" />
+        M
+        </label>
+        <label>
+        <input type="radio" name="size" value="L" />
+        L
+       </label>
+       <label>
+       <input type="radio" name="size" value="XL" />
+        XL
+        </label>
+        </div>
+        
+         <label class="checkbox-btn">
+           <input type="checkbox" required />
+           <span class="checkmark"> соус </span>
+         </label>
+        <button type="submit" class="btn">Надіслати</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="modal.js"></script>
+</body>
+</html>
